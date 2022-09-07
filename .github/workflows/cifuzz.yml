@@ -60,7 +60,7 @@ jobs:
           fuzzing_server_address: ${{ env.FUZZING_SERVER_ADDRESS }}
           dashboard_address: ${{ env.WEB_APP_ADDRESS }}
       - id: upload-artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: ${{ (success() || failure()) }}
         with:
           name: ci_fuzz_results
