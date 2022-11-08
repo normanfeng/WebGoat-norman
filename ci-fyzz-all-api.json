@@ -1,0 +1,5182 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "WebGoat",
+    "version": "8.2.0"
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:8080/"
+    }
+  ],
+  "paths": {
+    "/WebGoat/startlesson.mvc": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "text/plain": {
+              "schema": {
+                "type": "string",
+                "example": "áááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááá/ááááááááááááááasswordReset/reset/login?email=hh&password=oo HTTP/1.1\nHost: 127.0.0.1:8080ááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááááá"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/welcome.mvc": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/service/debug/labels.mvc": {
+      "get": {
+        "parameters": [
+          {
+            "name": "enabled",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "example": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/service/lessonmenu.mvc": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/service/parameter.mvc": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/service/hint.mvc": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/service/session.mvc": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/service/labels.mvc": {
+      "get": {
+        "parameters": [
+          {
+            "name": "lang",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "CN"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/service/lessoninfo.mvc": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/service/reportcard.mvc": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/service/reloadplugins.mvc": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/service/lessontitle.mvc": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/service/cookie.mvc": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/scoreboard-data": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/service/lessonplan.mvc": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/attack": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/service/lessonprogress.mvc": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/service/lessonoverview.mvc": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/service/restartlesson.mvc": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/registration": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/challenge/8/votes/average": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/challenge/8/votes/": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/challenge/8/vote/{stars}": {
+      "get": {
+        "parameters": [
+          {
+            "name": "stars",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "example": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/challenge/7/reset-password/{link}": {
+      "get": {
+        "parameters": [
+          {
+            "name": "link",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "xx"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/challenge/7": {
+      "post": {
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "qq@qq.com"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/challenge/7/.git": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/challenge/6": {
+      "post": {
+        "parameters": [
+          {
+            "name": "username_login",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "cifuzz"
+            }
+          },
+          {
+            "name": "password_login",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "nnMjJa72lx"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "parameters": [
+          {
+            "name": "username_reg",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "cifuzz"
+            }
+          },
+          {
+            "name": "password_reg",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "nnMjJa72lx"
+            }
+          },
+          {
+            "name": "email_reg",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "kk@qq.com"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/BypassRestrictions/frontendValidation": {
+      "post": {
+        "parameters": [
+          {
+            "name": "field1",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "abcc"
+            }
+          },
+          {
+            "name": "field2",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "1234"
+            }
+          },
+          {
+            "name": "field3",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "abc $ABC 123"
+            }
+          },
+          {
+            "name": "field4",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "ten"
+            }
+          },
+          {
+            "name": "field5",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "01101AA"
+            }
+          },
+          {
+            "name": "field6",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "90201 1111AA"
+            }
+          },
+          {
+            "name": "field7",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "301-604-4882$$"
+            }
+          },
+          {
+            "name": "error",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "0"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/BypassRestrictions/FieldRestrictions": {
+      "post": {
+        "parameters": [
+          {
+            "name": "select",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "pp"
+            }
+          },
+          {
+            "name": "radio",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "kk"
+            }
+          },
+          {
+            "name": "checkbox",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "uu"
+            }
+          },
+          {
+            "name": "shortInput",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "ll"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/clientSideFiltering/getItForFree": {
+      "post": {
+        "parameters": [
+          {
+            "name": "checkoutCode",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "get_it_for_free"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/clientSideFiltering/attack1": {
+      "post": {
+        "parameters": [
+          {
+            "name": "answer",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "pp"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/clientSideFiltering/challenge-store/coupons": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/clientSideFiltering/challenge-store/coupons/{code}": {
+      "get": {
+        "parameters": [
+          {
+            "name": "code",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "get_it_for_free"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/ChromeDevTools/network": {
+      "post": {
+        "parameters": [
+          {
+            "name": "network_num",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "123456"
+            }
+          },
+          {
+            "name": "number",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "123456"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/ChromeDevTools/dummy": {
+      "post": {
+        "parameters": [
+          {
+            "name": "successMessage",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "13612345678"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/IDOR/diff-attributes": {
+      "post": {
+        "parameters": [
+          {
+            "name": "attributes",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "@{/lesson_js/idor.js}"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/IDOR/own": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/IDOR/login": {
+      "post": {
+        "parameters": [
+          {
+            "name": "username",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "cifuzz"
+            }
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "nnMjJa72lx"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/csrf/confirm-flag-1": {
+      "post": {
+        "parameters": [
+          {
+            "name": "confirmFlagVal",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "csrf-get-success"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/csrf/login": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/csrf/feedback/message": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string",
+                "example": "{\"name\": \"Test\", \"email\": \"test1233@dfssdf.de\", \"subject\": \"service\", \"message\":\"dsaffd\"}"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/csrf/feedback": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "name": "confirmFlagVal",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "feedback"
+            }
+          }
+        ]
+      }
+    },
+    "/WebGoat/csrf/review": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/JWT/votings": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/JWT/votings/{title}": {
+      "post": {
+        "parameters": [
+          {
+            "name": "title",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "Admin lost password"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/JWT/final/follow/{user}": {
+      "post": {
+        "parameters": [
+          {
+            "name": "user",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "tom"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/JWT/refresh/newToken": {
+      "post": {
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string",
+                "example": "{}"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/HttpBasics/attack1": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "person": {
+                    "type": "string",
+                    "example": "goatuser"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/HttpBasics/attack2": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "answer": {
+                    "type": "string",
+                    "example": "POST"
+                  },
+                  "magic_answer": {
+                    "type": "string",
+                    "example": "33"
+                  },
+                  "magic_num": {
+                    "type": "string",
+                    "example": "4"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/HttpProxies/intercept-request": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "name": "x-request-intercepted",
+            "in": "header",
+            "schema": {
+              "type": "boolean",
+              "default": true,
+              "example": true
+            }
+          },
+          {
+            "name": "changeMe",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "Requests are tampered easily"
+            }
+          }
+        ]
+      }
+    },
+    "/WebGoat/InsecureDeserialization/task": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "token": {
+                    "type": "string",
+                    "example": "rO0ABXNyADFvcmcuZHVtbXkuaW5zZWN1cmUuZnJhbWV3b3JrLlZ1bG5lcmFibGVUYXNrSG9sZGVyAAAAAAAAAAICAANMABZyZXF1ZXN0ZWRFeGVjdXRpb25UaW1ldAAZTGphdmEvdGltZS9Mb2NhbERhdGVUaW1lO0wACnRhc2tBY3Rpb250ABJMamF2YS9sYW5nL1N0cmluZztMAAh0YXNrTmFtZXEAfgACeHBzcgANamF2YS50aW1lLlNlcpVdhLobIkiyDAAAeHB3DgUAAAfmChERKygDf6LQeHQAB3NsZWVwIDV0AAR3YWl0"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/InsecureLogin/task": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "password": {
+                    "type": "string",
+                    "example": "BlackPearl"
+                  },
+                  "username": {
+                    "type": "string",
+                    "example": "CaptainJack"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/JWT/final/delete": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "token": {
+                    "type": "string",
+                    "example": "eyJ0eXAiOiJKV1QiLCJraWQiOiJ3ZWJnb2F0X2tleSIsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJXZWJHb2F0IFRva2VuIEJ1aWxkZXIiLCJpYXQiOjE1MjQyMTA5MDQsImV4cCI6MTYxODkwNTMwNCwiYXVkIjoid2ViZ29hdC5vcmciLCJzdWIiOiJqZXJyeUB3ZWJnb2F0LmNvbSIsInVzZXJuYW1lIjoiSmVycnkiLCJFbWFpbCI6ImplcnJ5QHdlYmdvYXQuY29tIiwiUm9sZSI6WyJDYXQiXX0.CgZ27DzgVW8gzc0n6izOU638uUCi6UhiOJKYzoEZGE8"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/JWT/secret": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "token": {
+                    "type": "string",
+                    "example": "eyJraWQiOiJ3ZWJnb2F0X2tleSIsImFsZyI6IkhTNTEyIn0.eyJhdWQiOiJ3ZWJnb2F0Lm9yZyIsImVtYWlsIjoiamVycnlAd2ViZ29hdC5jb20iLCJ1c2VybmFtZSI6IkplcnJ5In0.xBc5FFwaOcuxjdr_VJ16n8Jb7vScuaZulNTl66F2MWF1aBe47QsUosvbjWGORNcMPiPNwnMu1Yb0WZVNrp2ZXA"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/JWT/votings/login": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "name": "user",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "Tom"
+            }
+          }
+        ]
+      }
+    },
+    "/WebGoat/SSRF/task1": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "url": {
+                    "type": "string",
+                    "example": "images/jerry.png"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SSRF/task2": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "url": {
+                    "type": "string",
+                    "example": "http://ifconfig.pro"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SecurePasswords/assignment": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "password": {
+                    "type": "string",
+                    "example": "ajnaeliclm^&&@kjn."
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/WebWolf/landing": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "uniqueCode": {
+                    "type": "string",
+                    "example": "/WebWolf/requests"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/auth-bypass/verify-account": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "jsEnabled": {
+                    "type": "string",
+                    "example": "1"
+                  },
+                  "secQuestion2": {
+                    "type": "string",
+                    "example": "John"
+                  },
+                  "secQuestion3": {
+                    "type": "string",
+                    "example": "Main"
+                  },
+                  "userId": {
+                    "type": "string",
+                    "example": "12309746"
+                  },
+                  "verifyMethod": {
+                    "type": "string",
+                    "example": "SEC_QUESTIONS"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/challenge/1": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "password": {
+                    "type": "string",
+                    "example": "!!webgoat_admin_2178!!"
+                  },
+                  "username": {
+                    "type": "string",
+                    "example": "admin"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/challenge/5": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "password_login": {
+                    "type": "string",
+                    "example": "1' or '1'='1"
+                  },
+                  "username_login": {
+                    "type": "string",
+                    "example": "Larry"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/cia/quiz": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "question_0_solution": {
+                    "type": "string",
+                    "example": "Solution 3: By stealing a database where names and emails are stored and uploading it to a website."
+                  },
+                  "question_1_solution": {
+                    "type": "string",
+                    "example": "Solution 1: By changing the names and emails of one or more users stored in a database."
+                  },
+                  "question_2_solution": {
+                    "type": "string",
+                    "example": "Solution 4: By launching a denial of service attack on the servers."
+                  },
+                  "question_3_solution": {
+                    "type": "string",
+                    "example": "Solution 2: The systems security is compromised even if only one goal is harmed."
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/crypto/encoding/basic-auth": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "answer_pwd": {
+                    "type": "string",
+                    "example": "passw0rd"
+                  },
+                  "answer_user": {
+                    "type": "string",
+                    "example": "webgoat"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/crypto/encoding/xor": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "answer_pwd1": {
+                    "type": "string",
+                    "example": "databasepassword"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/crypto/hashing": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "answer_pwd1": {
+                    "type": "string",
+                    "example": "passw0rd"
+                  },
+                  "answer_pwd2": {
+                    "type": "string",
+                    "example": "secret"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/crypto/secure/defaults": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "secretFileName": {
+                    "type": "string",
+                    "example": "default_secret"
+                  },
+                  "secretText": {
+                    "type": "string",
+                    "example": "Leaving passwords in docker images is not so secure"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/lesson-template/sample-attack": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "param1": {
+                    "type": "string",
+                    "example": "secr37Value"
+                  },
+                  "param2": {
+                    "type": "string",
+                    "example": "Main"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/CrossSiteScripting/attack1": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "answer_xss_1": {
+                    "type": "string",
+                    "example": "yes"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/CrossSiteScripting/attack5a": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "name": "field1",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "<script>alert('XSS+Test')</script>"
+            }
+          },
+          {
+            "name": "field2",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "111"
+            }
+          },
+          {
+            "name": "QTY1",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "1"
+            }
+          },
+          {
+            "name": "QTY2",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "1"
+            }
+          },
+          {
+            "name": "QTY3",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "1"
+            }
+          },
+          {
+            "name": "QTY4",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "1"
+            }
+          }
+        ]
+      }
+    },
+    "/WebGoat/CrossSiteScripting/attack6a": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "DOMTestRoute": {
+                    "type": "string",
+                    "example": "start.mvc#test"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/CrossSiteScripting/dom-follow-up": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "successMessage": {
+                    "type": "string",
+                    "example": "13612345678"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/CrossSiteScripting/phone-home-xss": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "name": "webgoat-requested-by",
+            "in": "header",
+            "schema": {
+              "type": "string",
+              "default": "dom-xss-vuln",
+              "example": "dom-xss-vuln"
+            }
+          },
+          {
+            "name": "X-Requested-With",
+            "in": "header",
+            "schema": {
+              "type": "string",
+              "default": "XMLHttpRequest",
+              "example": "XMLHttpRequest"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "param1": {
+                    "type": "string",
+                    "example": "42"
+                  },
+                  "param2": {
+                    "type": "string",
+                    "example": "24"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/CrossSiteScripting/quiz": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "question_0_solution": {
+                    "type": "string",
+                    "example": "Solution 4: No because the browser trusts the website if it is acknowledged trusted, then the browser does not know that the script is malicious."
+                  },
+                  "question_1_solution": {
+                    "type": "string",
+                    "example": "Solution 3: The data is included in dynamic content that is sent to a web user without being validated for malicious content."
+                  },
+                  "question_2_solution": {
+                    "type": "string",
+                    "example": "Solution 1: The script is permanently stored on the server and the victim gets the malicious script when requesting information from the server."
+                  },
+                  "question_3_solution": {
+                    "type": "string",
+                    "example": "Solution 2: They reflect the injected script off the web server. That occurs when input sent to the web server is part of the request."
+                  },
+                  "question_4_solution": {
+                    "type": "string",
+                    "example": "Solution 4: No there are many other ways. Like HTML, Flash or any other type of code that the browser executes."
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjection/assignment5a": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "account": {
+                    "type": "string",
+                    "example": "\\'"
+                  },
+                  "injection": {
+                    "type": "string",
+                    "example": "\\'1\\'=\\'1"
+                  },
+                  "operator": {
+                    "type": "string",
+                    "example": "or"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjection/assignment5b": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "login_count": {
+                    "type": "string",
+                    "example": "2"
+                  },
+                  "userid": {
+                    "type": "string",
+                    "example": "1 or 1=1"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjection/attack10": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "action_string": {
+                    "type": "string",
+                    "example": "\\%update\\% \\'; drop table access_log ; --\\'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjection/attack2": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "example": "SELECT department FROM employees WHERE userid=96134;"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjection/attack3": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "example": "update employees set department='Sales' where last_name='Barnett'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjection/attack4": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "example": "alter table employees add column phone varchar(20)"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjection/attack5": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "example": "grant select on grant_rights to unauthorized_user"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjection/attack8": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "auth_tan": {
+                    "type": "string",
+                    "example": "3SL99A\\'  or \\'1'=\\'1"
+                  },
+                  "name": {
+                    "type": "string",
+                    "example": "Smith\\' or \\'1\\' = \\'1"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjection/attack9": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "auth_tan": {
+                    "type": "string",
+                    "example": "3SL99A\\' ; update employees set salary= \\'100000\\' where last_name=\\'Smith"
+                  },
+                  "name": {
+                    "type": "string",
+                    "example": "Smith"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjectionAdvanced/attack6a": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "userid_6a": {
+                    "type": "string",
+                    "example": "Smith'; SELECT * from user_system_data; --"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjectionAdvanced/attack6b": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "userid_6b": {
+                    "type": "string",
+                    "example": "passW0rD"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjectionAdvanced/challenge": {
+      "put": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "confirm_password": {
+                    "type": "string",
+                    "example": 123456
+                  },
+                  "email_reg": {
+                    "type": "string",
+                    "example": "test@qq.com"
+                  },
+                  "password_reg": {
+                    "type": "string",
+                    "example": 123456
+                  },
+                  "username_reg": {
+                    "type": "string",
+                    "example": "norman' and '1'='2"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjectionAdvanced/challenge_Login": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "password_login": {
+                    "type": "string",
+                    "example": "thisisasecretfortomonly"
+                  },
+                  "username_login": {
+                    "type": "string",
+                    "example": "tom"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjectionAdvanced/quiz": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "question_0_solution": {
+                    "type": "string",
+                    "example": "Solution 4: A statement has got values instead of a prepared statement"
+                  },
+                  "question_1_solution": {
+                    "type": "string",
+                    "example": "Solution 3: ?"
+                  },
+                  "question_2_solution": {
+                    "type": "string",
+                    "example": "Solution 2: Prepared statements are compiled once by the database management system waiting for input and are pre-compiled this way."
+                  },
+                  "question_3_solution": {
+                    "type": "string",
+                    "example": "Solution 3: Placeholders can prevent that the users input gets attached to the SQL query resulting in a seperation of code and data."
+                  },
+                  "question_4_solution": {
+                    "type": "string",
+                    "example": "Solution 4: The database registers 'Robert' ); DROP TABLE Students;--'."
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjectionMitigations/attack10a": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "field1": {
+                    "type": "string",
+                    "example": "getConnection"
+                  },
+                  "field2": {
+                    "type": "string",
+                    "example": "PreparedStatement prep"
+                  },
+                  "field3": {
+                    "type": "string",
+                    "example": "prepareStatement"
+                  },
+                  "field4": {
+                    "type": "string",
+                    "example": "?"
+                  },
+                  "field5": {
+                    "type": "string",
+                    "example": "?"
+                  },
+                  "field6": {
+                    "type": "string",
+                    "example": "prep.setString(1,\"\")"
+                  },
+                  "field7": {
+                    "type": "string",
+                    "example": "prep.setString(2,\\\"\\\")"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjectionMitigations/attack10b": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "editor": {
+                    "type": "string",
+                    "example": "try {\r\n  Connection conn = DriverManager.getConnection(DBURL,DBUSER,DBPW);\r\n     PreparedStatement prep = conn.prepareStatement(\"select id from users where name = ?\");\r\n    prep.setString(1,\"me\");\r\n    prep.execute();\r\n    System.out.println(conn);   //should output 'null'\r\n} catch (Exception e) {\r\n    System.out.println(\"Oops. Something went wrong!\");\r\n}"
+                  },
+                  "field1": {
+                    "type": "string",
+                    "example": "getConnection"
+                  },
+                  "field2": {
+                    "type": "string",
+                    "example": "PreparedStatement prep"
+                  },
+                  "field3": {
+                    "type": "string",
+                    "example": "prepareStatement"
+                  },
+                  "field4": {
+                    "type": "string",
+                    "example": "?"
+                  },
+                  "field5": {
+                    "type": "string",
+                    "example": "?"
+                  },
+                  "field6": {
+                    "type": "string",
+                    "example": "prep.setString(1,\"\")"
+                  },
+                  "field7": {
+                    "type": "string",
+                    "example": "prep.setString(2,\\\"\\\")"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjectionMitigations/attack12a": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "ip": {
+                    "type": "string",
+                    "example": "104.130.219.202"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjectionMitigations/servers": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "name": "column",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "(case when (true) then hostname else id end)"
+            }
+          }
+        ]
+      }
+    },
+    "/WebGoat/SqlOnlyInputValidation/attack": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "userid_sql_only_input_validation": {
+                    "type": "string",
+                    "example": "Smith';SELECT/**/*/**/from/**/user_system_data;--"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlOnlyInputValidationOnKeywords/attack": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "userid_sql_only_input_validation_on_keywords": {
+                    "type": "string",
+                    "example": "Smith';SESELECTLECT/**/*/**/FRFROMOM/**/user_system_data;--"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/login": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "name": "host",
+            "in": "header",
+            "schema": {
+              "type": "string",
+              "default": "127.0.0.1:8080",
+              "example": "127.0.0.1:8080"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string",
+                    "example": "cifuzz"
+                  },
+                  "password": {
+                    "type": "string",
+                    "example": "nnMjJa72lx"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/register.mvc": {
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string",
+                    "example": "cifuzz"
+                  },
+                  "password": {
+                    "type": "string",
+                    "example": "nnMjJa72lx"
+                  },
+                  "matchingPassword": {
+                    "type": "string",
+                    "example": "nnMjJa72lx"
+                  },
+                  "agree": {
+                    "type": "string",
+                    "example": "agree"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/CrossSiteScripting.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/InsecureLogin.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/HttpProxies.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/HtmlTampering.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SSRF.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/BypassRestrictions.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/IDOR.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/HttpBasics.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjectionAdvanced.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjection.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SqlInjectionMitigations.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/JWT.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/XXE.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/VulnerableComponents.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/InsecureDeserialization.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/CIA.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/ClientSideFiltering.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/Challenge8.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/Challenge6.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/Challenge5.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/Challenge7.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/Challenge1.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/SecurePasswords.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/ChromeDevTools.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/PasswordReset.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/IDOR/profile/{userId}": {
+      "get": {
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "dd"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "example": 1
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/userSubmittedProfile"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/csrf/basic-get-flag": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/challenge/{userId}": {
+      "post": {
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "example": 7
+            }
+          },
+          {
+            "name": "email",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "qq"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/challenge/flag": {
+      "post": {
+        "parameters": [
+          {
+            "name": "flag",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "ff"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/WebWolf/mail/send": {
+      "post": {
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "hh"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/IDOR/profile/alt-path": {
+      "post": {
+        "parameters": [
+          {
+            "name": "url",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "kk"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/HtmlTampering/task": {
+      "post": {
+        "parameters": [
+          {
+            "name": "QTY",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "1"
+            }
+          },
+          {
+            "name": "Total",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "2999.99"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/VulnerableComponents/attack1": {
+      "post": {
+        "parameters": [
+          {
+            "name": "payload",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "tt"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/PasswordReset/SecurityQuestions": {
+      "post": {
+        "parameters": [
+          {
+            "name": "question",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "In what year was your mother born?"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/CrossSiteScriptingStored/stored-xss-follow-up": {
+      "post": {
+        "parameters": [
+          {
+            "name": "successMessage",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "rr"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/CrossSiteScriptingStored/stored-xss": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string",
+                "example": "{\"text\":\"someTextHere<script>webgoat.customjs.phoneHome()</script>MoreTextHere\"}"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/IDOR/profile/dd": {
+      "put": {
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "userId": {
+                    "type": "string",
+                    "example": "tom"
+                  },
+                  "role": {
+                    "type": "integer",
+                    "format": "int32",
+                    "example": 0
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/Challenge.lesson.lesson": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WebGoat/JWT/refresh/login": {
+      "post": {
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "user": {
+                    "type": "string",
+                    "example": "Jerry"
+                  },
+                  "password": {
+                    "type": "string",
+                    "example": "bm5nhSkxCXZkKRy4"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/JWT/refresh/checkout": {
+      "post": {
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/JWT/secret/gettoken": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/xxe/comments": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/xxe/simple": {
+      "post": {
+        "requestBody": {
+          "content": {
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/userSubmittedProfile"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/xxe/tmpdir": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/xxe/sampledtd": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/xxe/blind": {
+      "post": {
+        "requestBody": {
+          "content": {
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/userSubmittedProfile"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/xxe/content-type": {
+      "post": {
+        "requestBody": {
+          "content": {
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/userSubmittedProfile"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/WebWolf/landing/password-reset": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/WebWolf/mail": {
+      "post": {
+        "parameters": [
+          {
+            "name": "uniqueCode",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "rr"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/access-control/hidden-menu": {
+      "post": {
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/userSubmittedProfile"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/users": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/newUser"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/newUser"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/access-control/user-hash": {
+      "post": {
+        "parameters": [
+          {
+            "name": "userHash",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "42"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/PasswordReset/reset/reset-password/{link}": {
+      "get": {
+        "parameters": [
+          {
+            "name": "link",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "somethingVeryRandomWhichNoOneWillEverTypeInAsPasswordForTom"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/PasswordReset/reset/login": {
+      "post": {
+        "parameters": [
+          {
+            "name": "password",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "123456"
+            }
+          },
+          {
+            "name": "email",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "tom@webgoat-cloud.org"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/PasswordReset/reset/change-password": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "string",
+                "example": "123456"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/PasswordReset/questions": {
+      "post": {
+        "parameters": [
+          {
+            "name": "question",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "In what year was your mother born?"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/PasswordReset/ForgotPassword/create-password-reset-link": {
+      "post": {
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "jerry@qq.com"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/PasswordReset/simple-mail/reset": {
+      "post": {
+        "parameters": [
+          {
+            "name": "emailReset",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "test1233@webgoat.org"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/PasswordReset/simple-mail": {
+      "post": {
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "test1233@webgoat.org"
+            }
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "123456"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WebGoat/error.html": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "newUser": {
+        "type": "object",
+        "properties": {
+          "WebGoatUser": {
+            "$ref": "#/components/schemas/WebGoatUser"
+          },
+          "User": {
+            "$ref": "#/components/schemas/WebGoatUser"
+          },
+          "GrantedAuthority": {
+            "type": "string",
+            "example": [
+              "WEBGOAT_USER"
+            ]
+          }
+        }
+      },
+      "WebGoatUser": {
+        "type": "object",
+        "properties": {
+          "accountNonExpired": {
+            "type": "boolean",
+            "example": true
+          },
+          "accountNonLocked": {
+            "type": "boolean",
+            "example": true
+          },
+          "authorities": {
+            "type": "string",
+            "example": [
+              "WEBGOAT_USER"
+            ]
+          },
+          "credentialsNonExpired": {
+            "type": "boolean",
+            "example": true
+          },
+          "enabled": {
+            "type": "boolean",
+            "example": true
+          },
+          "password": {
+            "type": "string",
+            "example": "nnMjJa72lx"
+          },
+          "role": {
+            "type": "string",
+            "example": "User"
+          },
+          "user": {
+            "type": "string",
+            "example": "1"
+          },
+          "username": {
+            "type": "string",
+            "example": "cifuzz"
+          }
+        }
+      },
+      "userSubmittedProfile": {
+        "type": "object",
+        "properties": {
+          "admin": {
+            "type": "boolean",
+            "example": true
+          },
+          "color": {
+            "type": "string",
+            "example": "red"
+          },
+          "name": {
+            "type": "string",
+            "example": "cifuzz"
+          },
+          "profileFromId": {
+            "type": "string",
+            "example": "1"
+          },
+          "role": {
+            "type": "integer",
+            "format": "int32",
+            "example": 1
+          },
+          "size": {
+            "type": "string",
+            "example": "1"
+          },
+          "userId": {
+            "type": "string",
+            "example": "1"
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}
